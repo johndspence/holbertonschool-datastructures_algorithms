@@ -10,7 +10,7 @@
  */
 void print_array(int *array, size_t start, size_t end)
 {
-	printf("Searching in array: ");
+	printf("Searching in array:");
 	while (start <= end - 1)
 	{
 		printf(" %d,", array[start]);
