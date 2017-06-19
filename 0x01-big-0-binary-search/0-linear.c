@@ -1,25 +1,6 @@
 #include "search_algos.h"
 
 /**
- * print_array - Prints an array to stdout.
- * @array: Array to be printed.
- * @start: First element in array to print.
- * @end: Last element in array to print.
- *
- * Return: void
- */
-void print_array(int *array, size_t start, size_t end)
-{
-	printf("Searching in array:");
-	while (start <= end - 1)
-	{
-		printf(" %d,", array[start]);
-		start++;
-	}
-	printf(" %d\n", array[start]);
-}
-
-/**
  * linear_search - Binary search algorithm
  * @array: Sorted array of int to be searched.
  * @size: Number of elements in array.
