@@ -1,8 +1,8 @@
 #include "search_algos.h"
 
 /**
- * print_array: Prints an array to stdout.
- * @print_array: Array to be printed.
+ * print_array - Prints an array to stdout.
+ * @array: Array to be printed.
  * @start: First element in array to print.
  * @end: Last element in array to print.
  *
@@ -10,17 +10,17 @@
  */
 void print_array(int *array, size_t start, size_t end)
 {
-	printf("Searching in array:  \n");
+	printf("Searching in array: ");
 	while (start <= end - 1)
 	{
-		printf("%d, ", array[start]);
+		printf(" %d,", array[start]);
 		start++;
 	}
-	printf("%d\n", array[start]);
+	printf(" %d\n", array[start]);
 }
 
 /**
- * binary_search: Binary search algorithm
+ * binary_search - Binary search algorithm
  * @array: Sorted array of int to be searched.
  * @size: Number of elements in array.
  * @value: Value to be searched for in array.
@@ -31,7 +31,7 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t start, middle, end;
 
-	if (!array || size < 1 )
+	if (!array || size < 1)
 	{
 		return (-1);
 	}
